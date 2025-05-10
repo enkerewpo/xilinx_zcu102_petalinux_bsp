@@ -1,0 +1,492 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu May 23 01:01:32 2024
+# Process ID: 1160083
+# Current directory: /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1
+# Command line: vivado -log project_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source project_1_wrapper.tcl
+# Log file: /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/project_1_wrapper.vds
+# Journal file: /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/vivado.jou
+# Running On        :xcosswbld26
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.2 LTS
+# Processor Detail  :AMD EPYC 7302 16-Core Processor
+# CPU Frequency     :2994.419 MHz
+# CPU Physical cores:32
+# CPU Logical cores :64
+# Host memory       :270024 MB
+# Swap memory       :6774 MB
+# Total Virtual     :276799 MB
+# Available Virtual :211886 MB
+#-----------------------------------------------------------
+INFO: [Common 17-1239] XILINX_LOCAL_USER_DATA is set to 'NO'.
+Sourcing tcl script '/home/xbrbbot/.Xilinx/Vivado/Vivado_init.tcl'
+345 Beta devices matching pattern found, 345 enabled.
+enable_beta_device: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1473.684 ; gain = 130.996 ; free physical = 90861 ; free virtual = 216677
+invalid command name "internal::enable_all_devices"
+    while executing
+"internal::enable_all_devices"
+    (file "/home/xbrbbot/.Xilinx/Vivado/Vivado_init.tcl" line 2)
+source project_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/2024.1_0523_1/installs/lin64/Vivado/2024.1/data/ip'.
+Command: synth_design -top project_1_wrapper -part xczu9eg-ffvb1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1160567
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2783.359 ; gain = 297.777 ; free physical = 90964 ; free virtual = 216903
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'project_1_wrapper' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.srcs/sources_1/imports/hdl/project_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'project_1' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'project_1_axi_intc_0_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_axi_intc_0_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'project_1_axi_interconnect_lpd_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:968]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_636TJW' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2788]
+INFO: [Synth 8-6157] synthesizing module 'project_1_auto_us_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_auto_us_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_auto_us_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'project_1_auto_us_0' is unconnected for instance 'auto_us' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:3075]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'project_1_auto_us_0' is unconnected for instance 'auto_us' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:3075]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'project_1_auto_us_0' has 72 connections declared, but only 70 given [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:3075]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_636TJW' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2788]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_axi_interconnect_lpd_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:968]
+INFO: [Synth 8-6157] synthesizing module 'project_1_axi_register_slice_0_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_axi_register_slice_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_axi_register_slice_0_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_axi_register_slice_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awid' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_awaddr' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_awlen' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_awuser' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_awvalid' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_wdata' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_wlast' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_wvalid' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_bready' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_arid' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_araddr' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_arlen' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_arlock' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_aruser' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_arvalid' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7071] port 'm_axi_rready' of module 'project_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+WARNING: [Synth 8-7023] instance 'axi_register_slice_0' of module 'project_1_axi_register_slice_0_0' has 84 connections declared, but only 54 given [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:397]
+INFO: [Synth 8-6157] synthesizing module 'project_1_axi_vip_0_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_axi_vip_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_axi_vip_0_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_axi_vip_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'project_1_axi_vip_1_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_axi_vip_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_axi_vip_1_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_axi_vip_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'project_1_clk_wiz_0_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_clk_wiz_0_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'project_1_interconnect_axifull_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:1338]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_19OHJXQ' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2428]
+INFO: [Synth 8-6157] synthesizing module 'project_1_auto_us_1' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_auto_us_1' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_auto_us_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'project_1_auto_us_1' is unconnected for instance 'auto_us' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2715]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'project_1_auto_us_1' is unconnected for instance 'auto_us' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2715]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'project_1_auto_us_1' has 72 connections declared, but only 70 given [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2715]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_19OHJXQ' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2428]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_interconnect_axifull_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:1338]
+INFO: [Synth 8-6157] synthesizing module 'project_1_interconnect_axihpm0fpd_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:1708]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_MLHSEI' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:3148]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_MLHSEI' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:3148]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_interconnect_axihpm0fpd_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:1708]
+INFO: [Synth 8-6157] synthesizing module 'project_1_interconnect_axilite_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2128]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_Q0WXIM' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:3434]
+INFO: [Synth 8-6157] synthesizing module 'project_1_auto_pc_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_auto_pc_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'project_1_auto_pc_0' is unconnected for instance 'auto_pc' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:3665]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'project_1_auto_pc_0' is unconnected for instance 'auto_pc' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:3665]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'project_1_auto_pc_0' has 60 connections declared, but only 58 given [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:3665]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_Q0WXIM' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:3434]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_interconnect_axilite_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:2128]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:763]
+INFO: [Synth 8-6157] synthesizing module 'project_1_proc_sys_reset_0_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_proc_sys_reset_0_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'project_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:763]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'project_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:763]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'project_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:763]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'project_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:763]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'project_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:763]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'project_1_proc_sys_reset_0_0' has 10 connections declared, but only 5 given [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:763]
+INFO: [Synth 8-6157] synthesizing module 'project_1_proc_sys_reset_1_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_proc_sys_reset_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_proc_sys_reset_1_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_proc_sys_reset_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'project_1_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:769]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'project_1_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:769]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'project_1_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:769]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_1' of module 'project_1_proc_sys_reset_1_0' has 10 connections declared, but only 7 given [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:769]
+INFO: [Synth 8-6157] synthesizing module 'project_1_proc_sys_reset_2_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_proc_sys_reset_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_proc_sys_reset_2_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_proc_sys_reset_2_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'project_1_proc_sys_reset_2_0' is unconnected for instance 'proc_sys_reset_2' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:777]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'project_1_proc_sys_reset_2_0' is unconnected for instance 'proc_sys_reset_2' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:777]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'project_1_proc_sys_reset_2_0' is unconnected for instance 'proc_sys_reset_2' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:777]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'project_1_proc_sys_reset_2_0' is unconnected for instance 'proc_sys_reset_2' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:777]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_2' of module 'project_1_proc_sys_reset_2_0' has 10 connections declared, but only 6 given [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:777]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:784]
+INFO: [Synth 8-6157] synthesizing module 'project_1_proc_sys_reset_3_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_proc_sys_reset_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_proc_sys_reset_3_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_proc_sys_reset_3_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'project_1_proc_sys_reset_3_0' is unconnected for instance 'proc_sys_reset_3' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:784]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'project_1_proc_sys_reset_3_0' is unconnected for instance 'proc_sys_reset_3' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:784]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'project_1_proc_sys_reset_3_0' is unconnected for instance 'proc_sys_reset_3' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:784]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'project_1_proc_sys_reset_3_0' is unconnected for instance 'proc_sys_reset_3' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:784]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'project_1_proc_sys_reset_3_0' is unconnected for instance 'proc_sys_reset_3' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:784]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_3' of module 'project_1_proc_sys_reset_3_0' has 10 connections declared, but only 5 given [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:784]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:790]
+INFO: [Synth 8-6157] synthesizing module 'project_1_proc_sys_reset_4_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_proc_sys_reset_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_proc_sys_reset_4_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_proc_sys_reset_4_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'project_1_proc_sys_reset_4_0' is unconnected for instance 'proc_sys_reset_4' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:790]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'project_1_proc_sys_reset_4_0' is unconnected for instance 'proc_sys_reset_4' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:790]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'project_1_proc_sys_reset_4_0' is unconnected for instance 'proc_sys_reset_4' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:790]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'project_1_proc_sys_reset_4_0' is unconnected for instance 'proc_sys_reset_4' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:790]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'project_1_proc_sys_reset_4_0' is unconnected for instance 'proc_sys_reset_4' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:790]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_4' of module 'project_1_proc_sys_reset_4_0' has 10 connections declared, but only 5 given [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:790]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:796]
+INFO: [Synth 8-6157] synthesizing module 'project_1_proc_sys_reset_5_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_proc_sys_reset_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_proc_sys_reset_5_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_proc_sys_reset_5_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'project_1_proc_sys_reset_5_0' is unconnected for instance 'proc_sys_reset_5' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:796]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'project_1_proc_sys_reset_5_0' is unconnected for instance 'proc_sys_reset_5' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:796]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'project_1_proc_sys_reset_5_0' is unconnected for instance 'proc_sys_reset_5' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:796]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'project_1_proc_sys_reset_5_0' is unconnected for instance 'proc_sys_reset_5' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:796]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'project_1_proc_sys_reset_5_0' is unconnected for instance 'proc_sys_reset_5' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:796]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_5' of module 'project_1_proc_sys_reset_5_0' has 10 connections declared, but only 5 given [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:796]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:802]
+INFO: [Synth 8-6157] synthesizing module 'project_1_proc_sys_reset_6_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_proc_sys_reset_6_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_proc_sys_reset_6_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_proc_sys_reset_6_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'project_1_proc_sys_reset_6_0' is unconnected for instance 'proc_sys_reset_6' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:802]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'project_1_proc_sys_reset_6_0' is unconnected for instance 'proc_sys_reset_6' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:802]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'project_1_proc_sys_reset_6_0' is unconnected for instance 'proc_sys_reset_6' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:802]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'project_1_proc_sys_reset_6_0' is unconnected for instance 'proc_sys_reset_6' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:802]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'project_1_proc_sys_reset_6_0' is unconnected for instance 'proc_sys_reset_6' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:802]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_6' of module 'project_1_proc_sys_reset_6_0' has 10 connections declared, but only 5 given [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:802]
+INFO: [Synth 8-6157] synthesizing module 'project_1_zynq_ultra_ps_e_0_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_zynq_ultra_ps_e_0_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-1160083-xcosswbld26/realtime/project_1_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp2_awuser' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:808]
+WARNING: [Synth 8-7071] port 'maxigp2_aruser' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:808]
+WARNING: [Synth 8-7071] port 'saxigp5_bid' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:808]
+WARNING: [Synth 8-7071] port 'saxigp5_rid' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:808]
+WARNING: [Synth 8-7071] port 'saxigp6_bid' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:808]
+WARNING: [Synth 8-7071] port 'saxigp6_rid' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:808]
+WARNING: [Synth 8-7071] port 'pl_resetn1' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:808]
+WARNING: [Synth 8-7071] port 'pl_resetn2' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:808]
+WARNING: [Synth 8-7071] port 'pl_resetn3' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:808]
+WARNING: [Synth 8-7071] port 'pl_clk1' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:808]
+WARNING: [Synth 8-7071] port 'pl_clk2' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:808]
+WARNING: [Synth 8-7071] port 'pl_clk3' of module 'project_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:808]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'project_1_zynq_ultra_ps_e_0_0' has 169 connections declared, but only 157 given [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:808]
+INFO: [Synth 8-6155] done synthesizing module 'project_1' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_wrapper' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.srcs/sources_1/imports/hdl/project_1_wrapper.v:13]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_Q0WXIM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_Q0WXIM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module project_1_interconnect_axilite_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module project_1_interconnect_axilite_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_MLHSEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_MLHSEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_MLHSEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_MLHSEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module project_1_interconnect_axihpm0fpd_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module project_1_interconnect_axihpm0fpd_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_19OHJXQ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_19OHJXQ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module project_1_interconnect_axifull_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module project_1_interconnect_axifull_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_636TJW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_636TJW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module project_1_axi_interconnect_lpd_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module project_1_axi_interconnect_lpd_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2868.297 ; gain = 382.715 ; free physical = 90777 ; free virtual = 216741
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2880.172 ; gain = 394.590 ; free physical = 90775 ; free virtual = 216740
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2880.172 ; gain = 394.590 ; free physical = 90775 ; free virtual = 216740
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2880.172 ; gain = 0.000 ; free physical = 90742 ; free virtual = 216706
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'project_1_i/zynq_ultra_ps_e_0'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2905.109 ; gain = 0.000 ; free physical = 90421 ; free virtual = 216388
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0/project_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'project_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_axi_intc_0_0/project_1_axi_intc_0_0/project_1_axi_intc_0_0_in_context.xdc] for cell 'project_1_i/axi_intc_0'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_axi_intc_0_0/project_1_axi_intc_0_0/project_1_axi_intc_0_0_in_context.xdc] for cell 'project_1_i/axi_intc_0'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0/project_1_auto_us_1_in_context.xdc] for cell 'project_1_i/axi_interconnect_lpd/s00_couplers/auto_us'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_0/project_1_auto_us_0/project_1_auto_us_1_in_context.xdc] for cell 'project_1_i/axi_interconnect_lpd/s00_couplers/auto_us'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_axi_register_slice_0_0/project_1_axi_register_slice_0_0/project_1_axi_register_slice_0_0_in_context.xdc] for cell 'project_1_i/axi_register_slice_0'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_axi_register_slice_0_0/project_1_axi_register_slice_0_0/project_1_axi_register_slice_0_0_in_context.xdc] for cell 'project_1_i/axi_register_slice_0'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_axi_vip_0_0/project_1_axi_vip_0_0/project_1_axi_vip_0_0_in_context.xdc] for cell 'project_1_i/axi_vip_0'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_axi_vip_0_0/project_1_axi_vip_0_0/project_1_axi_vip_0_0_in_context.xdc] for cell 'project_1_i/axi_vip_0'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_axi_vip_1_0/project_1_axi_vip_1_0/project_1_axi_vip_0_0_in_context.xdc] for cell 'project_1_i/axi_vip_1'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_axi_vip_1_0/project_1_axi_vip_1_0/project_1_axi_vip_0_0_in_context.xdc] for cell 'project_1_i/axi_vip_1'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_clk_wiz_0_0/project_1_clk_wiz_0_0/project_1_clk_wiz_0_0_in_context.xdc] for cell 'project_1_i/clk_wiz_0'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_clk_wiz_0_0/project_1_clk_wiz_0_0/project_1_clk_wiz_0_0_in_context.xdc] for cell 'project_1_i/clk_wiz_0'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_1/project_1_auto_us_1/project_1_auto_us_1_in_context.xdc] for cell 'project_1_i/interconnect_axifull/s00_couplers/auto_us'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_us_1/project_1_auto_us_1/project_1_auto_us_1_in_context.xdc] for cell 'project_1_i/interconnect_axifull/s00_couplers/auto_us'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_pc_0/project_1_auto_pc_0/project_1_auto_pc_0_in_context.xdc] for cell 'project_1_i/interconnect_axilite/s00_couplers/auto_pc'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_auto_pc_0/project_1_auto_pc_0/project_1_auto_pc_0_in_context.xdc] for cell 'project_1_i/interconnect_axilite/s00_couplers/auto_pc'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_0_0/project_1_proc_sys_reset_0_0/project_1_proc_sys_reset_0_0_in_context.xdc] for cell 'project_1_i/proc_sys_reset_0'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_0_0/project_1_proc_sys_reset_0_0/project_1_proc_sys_reset_0_0_in_context.xdc] for cell 'project_1_i/proc_sys_reset_0'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_1_0/project_1_proc_sys_reset_1_0/project_1_proc_sys_reset_1_0_in_context.xdc] for cell 'project_1_i/proc_sys_reset_1'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_1_0/project_1_proc_sys_reset_1_0/project_1_proc_sys_reset_1_0_in_context.xdc] for cell 'project_1_i/proc_sys_reset_1'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_2_0/project_1_proc_sys_reset_2_0/project_1_proc_sys_reset_2_0_in_context.xdc] for cell 'project_1_i/proc_sys_reset_2'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_2_0/project_1_proc_sys_reset_2_0/project_1_proc_sys_reset_2_0_in_context.xdc] for cell 'project_1_i/proc_sys_reset_2'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_3_0/project_1_proc_sys_reset_3_0/project_1_proc_sys_reset_3_0_in_context.xdc] for cell 'project_1_i/proc_sys_reset_3'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_3_0/project_1_proc_sys_reset_3_0/project_1_proc_sys_reset_3_0_in_context.xdc] for cell 'project_1_i/proc_sys_reset_3'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_4_0/project_1_proc_sys_reset_4_0/project_1_proc_sys_reset_4_0_in_context.xdc] for cell 'project_1_i/proc_sys_reset_4'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_4_0/project_1_proc_sys_reset_4_0/project_1_proc_sys_reset_4_0_in_context.xdc] for cell 'project_1_i/proc_sys_reset_4'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_5_0/project_1_proc_sys_reset_5_0/project_1_proc_sys_reset_5_0_in_context.xdc] for cell 'project_1_i/proc_sys_reset_5'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_5_0/project_1_proc_sys_reset_5_0/project_1_proc_sys_reset_5_0_in_context.xdc] for cell 'project_1_i/proc_sys_reset_5'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_6_0/project_1_proc_sys_reset_6_0/project_1_proc_sys_reset_6_0_in_context.xdc] for cell 'project_1_i/proc_sys_reset_6'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_6_0/project_1_proc_sys_reset_6_0/project_1_proc_sys_reset_6_0_in_context.xdc] for cell 'project_1_i/proc_sys_reset_6'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/default.xdc]
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/default.xdc]
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2905.109 ; gain = 0.000 ; free physical = 90421 ; free virtual = 216388
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2905.109 ; gain = 0.000 ; free physical = 90421 ; free virtual = 216388
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2905.109 ; gain = 419.527 ; free physical = 90330 ; free virtual = 216299
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2907.113 ; gain = 421.531 ; free physical = 90331 ; free virtual = 216299
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/axi_intc_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/axi_interconnect_lpd/s00_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/axi_interconnect_lpd. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/axi_register_slice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/axi_vip_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/axi_vip_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/interconnect_axifull/s00_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/interconnect_axifull. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/interconnect_axihpm0fpd. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/interconnect_axilite/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/interconnect_axilite. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/proc_sys_reset_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/proc_sys_reset_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/proc_sys_reset_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/proc_sys_reset_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/proc_sys_reset_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/proc_sys_reset_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for project_1_i/proc_sys_reset_6. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2907.113 ; gain = 421.531 ; free physical = 90330 ; free virtual = 216298
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2907.113 ; gain = 421.531 ; free physical = 90329 ; free virtual = 216298
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port ACLK in module project_1_interconnect_axilite_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module project_1_interconnect_axilite_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module project_1_interconnect_axilite_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module project_1_interconnect_axilite_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module project_1_interconnect_axihpm0fpd_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module project_1_interconnect_axihpm0fpd_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module project_1_interconnect_axihpm0fpd_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module project_1_interconnect_axihpm0fpd_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module project_1_interconnect_axihpm0fpd_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module project_1_interconnect_axihpm0fpd_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module project_1_interconnect_axifull_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module project_1_interconnect_axifull_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module project_1_interconnect_axifull_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module project_1_interconnect_axifull_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module project_1_axi_interconnect_lpd_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module project_1_axi_interconnect_lpd_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module project_1_axi_interconnect_lpd_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module project_1_axi_interconnect_lpd_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2907.113 ; gain = 421.531 ; free physical = 93269 ; free virtual = 219243
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3367.238 ; gain = 881.656 ; free physical = 90641 ; free virtual = 216662
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3367.238 ; gain = 881.656 ; free physical = 90634 ; free virtual = 216656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3378.246 ; gain = 892.664 ; free physical = 90582 ; free virtual = 216606
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3392.121 ; gain = 906.539 ; free physical = 89967 ; free virtual = 216005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3392.121 ; gain = 906.539 ; free physical = 89967 ; free virtual = 216005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3392.121 ; gain = 906.539 ; free physical = 89963 ; free virtual = 216002
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3392.121 ; gain = 906.539 ; free physical = 89961 ; free virtual = 216001
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3392.121 ; gain = 906.539 ; free physical = 89960 ; free virtual = 216001
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3392.121 ; gain = 906.539 ; free physical = 89958 ; free virtual = 215999
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |project_1_axi_intc_0_0           |         1|
+|2     |project_1_auto_us_0              |         1|
+|3     |project_1_axi_register_slice_0_0 |         1|
+|4     |project_1_axi_vip_0_0            |         1|
+|5     |project_1_axi_vip_1_0            |         1|
+|6     |project_1_clk_wiz_0_0            |         1|
+|7     |project_1_auto_us_1              |         1|
+|8     |project_1_auto_pc_0              |         1|
+|9     |project_1_proc_sys_reset_0_0     |         1|
+|10    |project_1_proc_sys_reset_1_0     |         1|
+|11    |project_1_proc_sys_reset_2_0     |         1|
+|12    |project_1_proc_sys_reset_3_0     |         1|
+|13    |project_1_proc_sys_reset_4_0     |         1|
+|14    |project_1_proc_sys_reset_5_0     |         1|
+|15    |project_1_proc_sys_reset_6_0     |         1|
+|16    |project_1_zynq_ultra_ps_e_0_0    |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------+------+
+|      |Cell                           |Count |
++------+-------------------------------+------+
+|1     |project_1_auto_pc              |     1|
+|2     |project_1_auto_us              |     2|
+|4     |project_1_axi_intc_0           |     1|
+|5     |project_1_axi_register_slice_0 |     1|
+|6     |project_1_axi_vip_0            |     1|
+|7     |project_1_axi_vip_1            |     1|
+|8     |project_1_clk_wiz_0            |     1|
+|9     |project_1_proc_sys_reset_0     |     1|
+|10    |project_1_proc_sys_reset_1     |     1|
+|11    |project_1_proc_sys_reset_2     |     1|
+|12    |project_1_proc_sys_reset_3     |     1|
+|13    |project_1_proc_sys_reset_4     |     1|
+|14    |project_1_proc_sys_reset_5     |     1|
+|15    |project_1_proc_sys_reset_6     |     1|
+|16    |project_1_zynq_ultra_ps_e_0    |     1|
++------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3392.121 ; gain = 906.539 ; free physical = 89957 ; free virtual = 215998
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3392.121 ; gain = 881.602 ; free physical = 89933 ; free virtual = 215977
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3392.121 ; gain = 906.539 ; free physical = 89932 ; free virtual = 215976
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3392.121 ; gain = 0.000 ; free physical = 90245 ; free virtual = 216291
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3392.121 ; gain = 0.000 ; free physical = 90057 ; free virtual = 216107
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7ec3a0a2
+INFO: [Common 17-83] Releasing license: Synthesis
+68 Infos, 134 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 3392.121 ; gain = 1833.867 ; free physical = 90046 ; free virtual = 216097
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2620.798; main = 2393.746; forked = 326.396
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4272.883; main = 3318.422; forked = 1012.922
+INFO: [Common 17-1381] The checkpoint '/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/project_1_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file project_1_wrapper_utilization_synth.rpt -pb project_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 23 01:02:47 2024...

@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu May 23 01:00:59 2024
+# Process ID: 1159807
+# Current directory: /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_auto_us_0_synth_1
+# Command line: vivado -log project_1_auto_us_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source project_1_auto_us_0.tcl
+# Log file: /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_auto_us_0_synth_1/project_1_auto_us_0.vds
+# Journal file: /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_auto_us_0_synth_1/vivado.jou
+# Running On        :xcosswbld26
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.2 LTS
+# Processor Detail  :AMD EPYC 7302 16-Core Processor
+# CPU Frequency     :3250.141 MHz
+# CPU Physical cores:32
+# CPU Logical cores :64
+# Host memory       :270024 MB
+# Swap memory       :6774 MB
+# Total Virtual     :276799 MB
+# Available Virtual :208568 MB
+#-----------------------------------------------------------
+INFO: [Common 17-1239] XILINX_LOCAL_USER_DATA is set to 'NO'.
+Sourcing tcl script '/home/xbrbbot/.Xilinx/Vivado/Vivado_init.tcl'
+345 Beta devices matching pattern found, 345 enabled.
+enable_beta_device: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1473.113 ; gain = 79.027 ; free physical = 73667 ; free virtual = 199522
+invalid command name "internal::enable_all_devices"
+    while executing
+"internal::enable_all_devices"
+    (file "/home/xbrbbot/.Xilinx/Vivado/Vivado_init.tcl" line 2)
+source project_1_auto_us_0.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: project_1_auto_us_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 25522047ab72a18f to dir: /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_auto_us_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.cache/ip/2024.1/2/5/25522047ab72a18f/project_1_auto_us_1_stub.vhdl to /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_auto_us_0_synth_1/project_1_auto_us_0_stub.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.cache/ip/2024.1/2/5/25522047ab72a18f/project_1_auto_us_1_sim_netlist.vhdl to /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_auto_us_0_synth_1/project_1_auto_us_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.cache/ip/2024.1/2/5/25522047ab72a18f/project_1_auto_us_1.dcp to /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_auto_us_0_synth_1/project_1_auto_us_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.cache/ip/2024.1/2/5/25522047ab72a18f/project_1_auto_us_1_stub.v to /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_auto_us_0_synth_1/project_1_auto_us_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.cache/ip/2024.1/2/5/25522047ab72a18f/project_1_auto_us_1_sim_netlist.v to /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_auto_us_0_synth_1/project_1_auto_us_0_sim_netlist.v.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP project_1_auto_us_0, cache-ID = 25522047ab72a18f.
+INFO: [Common 17-206] Exiting Vivado at Thu May 23 01:01:21 2024...

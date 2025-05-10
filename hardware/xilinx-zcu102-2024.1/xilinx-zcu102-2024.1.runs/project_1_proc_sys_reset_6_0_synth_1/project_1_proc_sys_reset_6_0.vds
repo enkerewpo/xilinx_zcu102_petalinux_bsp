@@ -1,0 +1,317 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu May 23 00:59:16 2024
+# Process ID: 1156689
+# Current directory: /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_proc_sys_reset_6_0_synth_1
+# Command line: vivado -log project_1_proc_sys_reset_6_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source project_1_proc_sys_reset_6_0.tcl
+# Log file: /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_proc_sys_reset_6_0_synth_1/project_1_proc_sys_reset_6_0.vds
+# Journal file: /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_proc_sys_reset_6_0_synth_1/vivado.jou
+# Running On        :xcosswbld26
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.2 LTS
+# Processor Detail  :AMD EPYC 7302 16-Core Processor
+# CPU Frequency     :2994.419 MHz
+# CPU Physical cores:32
+# CPU Logical cores :64
+# Host memory       :270024 MB
+# Swap memory       :6774 MB
+# Total Virtual     :276799 MB
+# Available Virtual :223250 MB
+#-----------------------------------------------------------
+INFO: [Common 17-1239] XILINX_LOCAL_USER_DATA is set to 'NO'.
+Sourcing tcl script '/home/xbrbbot/.Xilinx/Vivado/Vivado_init.tcl'
+345 Beta devices matching pattern found, 345 enabled.
+enable_beta_device: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1473.453 ; gain = 111.027 ; free physical = 62093 ; free virtual = 187655
+invalid command name "internal::enable_all_devices"
+    while executing
+"internal::enable_all_devices"
+    (file "/home/xbrbbot/.Xilinx/Vivado/Vivado_init.tcl" line 2)
+source project_1_proc_sys_reset_6_0.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: project_1_proc_sys_reset_6_0
+Command: synth_design -top project_1_proc_sys_reset_6_0 -part xczu9eg-ffvb1156-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1157698
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2762.121 ; gain = 297.746 ; free physical = 33874 ; free virtual = 159493
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'project_1_proc_sys_reset_6_0' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_6_0/synth/project_1_proc_sys_reset_6_0.vhd:74]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_6_0/synth/project_1_proc_sys_reset_6_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1399]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1415]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1441]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1464]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1488]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/proj/xbuilds/2024.1_0523_1/installs/lin64/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137246' bound to instance 'POR_SRL_I' of component 'SRL16' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/proj/xbuilds/2024.1_0523_1/installs/lin64/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137246]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [/proj/xbuilds/2024.1_0523_1/installs/lin64/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137246]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+INFO: [Synth 8-256] done synthesizing module 'project_1_proc_sys_reset_6_0' (0#1) [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_6_0/synth/project_1_proc_sys_reset_6_0.vhd:74]
+WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2842.090 ; gain = 377.715 ; free physical = 32506 ; free virtual = 158146
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2850.996 ; gain = 386.621 ; free physical = 32488 ; free virtual = 158128
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2850.996 ; gain = 386.621 ; free physical = 32487 ; free virtual = 158127
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2861.965 ; gain = 0.000 ; free physical = 32373 ; free virtual = 158020
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_6_0/project_1_proc_sys_reset_6_0_ooc.xdc] for cell 'U0'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2932.809 ; gain = 0.000 ; free physical = 31882 ; free virtual = 157566
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_6_0/project_1_proc_sys_reset_6_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_6_0/project_1_proc_sys_reset_6_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_6_0/project_1_proc_sys_reset_6_0_board.xdc] for cell 'U0'
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_6_0/project_1_proc_sys_reset_6_0.xdc] for cell 'U0'
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_6_0/project_1_proc_sys_reset_6_0.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_6_0/project_1_proc_sys_reset_6_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/project_1_proc_sys_reset_6_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/project_1_proc_sys_reset_6_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_proc_sys_reset_6_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_proc_sys_reset_6_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2932.809 ; gain = 0.000 ; free physical = 31880 ; free virtual = 157564
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  FDR => FDRE: 12 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2932.809 ; gain = 0.000 ; free physical = 31872 ; free virtual = 157557
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2932.809 ; gain = 468.434 ; free physical = 30369 ; free virtual = 156070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2934.812 ; gain = 470.438 ; free physical = 30371 ; free virtual = 156071
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_proc_sys_reset_6_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2934.812 ; gain = 470.438 ; free physical = 30358 ; free virtual = 156058
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2934.812 ; gain = 470.438 ; free physical = 30353 ; free virtual = 156056
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2934.812 ; gain = 470.438 ; free physical = 30660 ; free virtual = 156384
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3351.930 ; gain = 887.555 ; free physical = 30068 ; free virtual = 155783
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3351.930 ; gain = 887.555 ; free physical = 30064 ; free virtual = 155779
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 3380.977 ; gain = 916.602 ; free physical = 30027 ; free virtual = 155741
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3380.977 ; gain = 916.602 ; free physical = 32680 ; free virtual = 158397
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3380.977 ; gain = 916.602 ; free physical = 32680 ; free virtual = 158397
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3380.977 ; gain = 916.602 ; free physical = 32674 ; free virtual = 158391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3380.977 ; gain = 916.602 ; free physical = 32674 ; free virtual = 158391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3380.977 ; gain = 916.602 ; free physical = 32674 ; free virtual = 158391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3380.977 ; gain = 916.602 ; free physical = 32673 ; free virtual = 158390
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     5|
+|2     |LUT2  |     9|
+|3     |LUT3  |     1|
+|4     |LUT4  |     6|
+|5     |LUT5  |     3|
+|6     |LUT6  |     1|
+|7     |SRL16 |     1|
+|8     |FDR   |     8|
+|9     |FDRE  |    28|
+|10    |FDSE  |     4|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 3380.977 ; gain = 916.602 ; free physical = 32673 ; free virtual = 158390
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3380.977 ; gain = 834.789 ; free physical = 32821 ; free virtual = 158538
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 3380.977 ; gain = 916.602 ; free physical = 32817 ; free virtual = 158534
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3380.977 ; gain = 0.000 ; free physical = 32787 ; free virtual = 158505
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3380.977 ; gain = 0.000 ; free physical = 41757 ; free virtual = 167471
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  FDR => FDRE: 8 instances
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete | Checksum: 9fa8506
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 3380.977 ; gain = 1838.898 ; free physical = 41763 ; free virtual = 167477
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2495.816; main = 2351.111; forked = 301.604
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4236.570; main = 3321.305; forked = 1012.918
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3380.977 ; gain = 0.000 ; free physical = 41754 ; free virtual = 167469
+INFO: [Common 17-1381] The checkpoint '/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_proc_sys_reset_6_0_synth_1/project_1_proc_sys_reset_6_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP project_1_proc_sys_reset_6_0, cache-ID = dd3d3d17e65c39d4
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3380.977 ; gain = 0.000 ; free physical = 41794 ; free virtual = 167508
+INFO: [Common 17-1381] The checkpoint '/tmp/tmp.dqEpFmS3RK/temp/hwflow/hwflow_project_1/project_1.runs/project_1_proc_sys_reset_6_0_synth_1/project_1_proc_sys_reset_6_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file project_1_proc_sys_reset_6_0_utilization_synth.rpt -pb project_1_proc_sys_reset_6_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 23 01:00:28 2024...
