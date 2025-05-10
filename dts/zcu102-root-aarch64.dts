@@ -5,11 +5,16 @@
 	#address-cells = <0x02>;
 	#size-cells = <0x02>;
 	model = "ZynqMP ZCU102 RevB";
-
-    cpus {
+	
+	chosen {
+		bootargs = "earlycon console=ttyPS0,115200 root=/dev/mmcblk0 rootwait rw";
+		stdout-path = "serial0:115200n8";
+	};
+	
+	cpus {
 		#address-cells = <0x01>;
 		#size-cells = <0x00>;
-
+		
 		cpu@0 {
 			compatible = "arm,cortex-a53";
 			device_type = "cpu";
@@ -21,7 +26,7 @@
 			clocks = <0x04 0x0a>;
 			phandle = <0x06>;
 		};
-
+		
 		cpu@1 {
 			compatible = "arm,cortex-a53";
 			device_type = "cpu";
@@ -32,7 +37,7 @@
 			next-level-cache = <0x03>;
 			phandle = <0x07>;
 		};
-
+		
 		cpu@2 {
 			compatible = "arm,cortex-a53";
 			device_type = "cpu";
@@ -43,7 +48,7 @@
 			next-level-cache = <0x03>;
 			phandle = <0x08>;
 		};
-
+		
 		cpu@3 {
 			compatible = "arm,cortex-a53";
 			device_type = "cpu";
@@ -54,16 +59,16 @@
 			next-level-cache = <0x03>;
 			phandle = <0x09>;
 		};
-
+		
 		l2-cache {
 			compatible = "cache";
 			cache-level = <0x02>;
 			phandle = <0x03>;
 		};
-
+		
 		idle-states {
 			entry-method = "psci";
-
+			
 			cpu-sleep-0 {
 				compatible = "arm,idle-state";
 				arm,psci-suspend-param = <0x40000000>;
@@ -75,8 +80,8 @@
 			};
 		};
 	};
-
-    zynqmp-ipi {
+	
+	zynqmp-ipi {
 		bootph-all;
 		compatible = "xlnx,zynqmp-ipi-mailbox";
 		interrupt-parent = <0x05>;
@@ -86,7 +91,7 @@
 		#size-cells = <0x02>;
 		ranges;
 		phandle = <0x40>;
-
+		
 		mailbox@ff9905c0 {
 			bootph-all;
 			reg = <0x00 0xff9905c0 0x00 0x20 0x00 0xff9905e0 0x00 0x20 0x00 0xff990e80 0x00 0x20 0x00 0xff990ea0 0x00 0x20>;
@@ -96,38 +101,38 @@
 			phandle = <0x0a>;
 		};
 	};
-
+	
 	pmu {
 		compatible = "arm,armv8-pmuv3";
 		interrupt-parent = <0x05>;
 		interrupts = <0x00 0x8f 0x04 0x00 0x90 0x04 0x00 0x91 0x04 0x00 0x92 0x04>;
 		interrupt-affinity = <0x06 0x07 0x08 0x09>;
 	};
-
+	
 	psci {
 		compatible = "arm,psci-0.2";
 		method = "smc";
 	};
-
-    memory@0 {
+	
+	memory@0 {
 		device_type = "memory";
 		// reg = <0x00 0x00 0x00 0x7ff00000 0x08 0x00 0x00 0x80000000>;
 		reg = <0x00 0x00 0x00 0x40000000>;
 	};
-
-
-    timer {
+	
+	
+	timer {
 		compatible = "arm,armv8-timer";
 		interrupt-parent = <0x05>;
 		interrupts = <0x01 0x0d 0xf08 0x01 0x0e 0xf08 0x01 0x0b 0xf08 0x01 0x0a 0xf08>;
 	};
-
-    reset-controller {
-			compatible = "xlnx,zynqmp-reset";
-			#reset-cells = <0x01>;
-			phandle = <0x11>;
+	
+	reset-controller {
+		compatible = "xlnx,zynqmp-reset";
+		#reset-cells = <0x01>;
+		phandle = <0x11>;
 	};
-
+	
 	fpga-region {
 		compatible = "fpga-region";
 		fpga-mgr = <0x10>;
@@ -136,15 +141,15 @@
 		ranges;
 		phandle = <0x57>;
 	};
-
-    axi {
+	
+	axi {
 		compatible = "simple-bus";
 		bootph-all;
 		#address-cells = <0x02>;
 		#size-cells = <0x02>;
 		ranges;
 		phandle = <0x58>;
-
+		
 		interrupt-controller@f9010000 {
 			compatible = "arm,gic-400";
 			#interrupt-cells = <0x03>;
@@ -156,8 +161,8 @@
 			num_interrupts = <0x60>;
 			phandle = <0x05>;
 		};
-
-        serial@ff000000 {
+		
+		serial@ff000000 {
 			bootph-all;
 			compatible = "xlnx,zynqmp-uart\0cdns,uart-r1p12";
 			status = "okay";
@@ -175,9 +180,9 @@
 			u-boot,dm-pre-reloc;
 			phandle = <0x95>;
 		};
-
-
-        mmc@ff170000 {
+		
+		
+		mmc@ff170000 {
 			bootph-all;
 			compatible = "xlnx,zynqmp-8.9a\0arasan,sdhci-8.9a";
 			status = "okay";
@@ -210,16 +215,16 @@
 			interrupts = <0x00 0x9b 0x04 0x00 0x9b 0x04 0x00 0x9b 0x04 0x00 0x9b 0x04 0x00 0x9b 0x04 0x00 0x9b 0x04 0x00 0x9b 0x04 0x00 0x9b 0x04 0x00 0x9b 0x04 0x00 0x9b 0x04 0x00 0x9b 0x04 0x00 0x9b 0x04 0x00 0x9b 0x04 0x00 0x9b 0x04 0x00 0x9b 0x04 0x00 0x9b 0x04 0x00 0x9b 0x04>;
 			phandle = <0x14>;
 		};
-    };
-
-    pss_ref_clk {
+	};
+	
+	pss_ref_clk {
 		bootph-all;
 		compatible = "fixed-clock";
 		#clock-cells = <0x00>;
 		clock-frequency = <0x1fca055>;
 		phandle = <0x0b>;
 	};
-
+	
 	video_clk {
 		bootph-all;
 		compatible = "fixed-clock";
@@ -227,7 +232,7 @@
 		clock-frequency = <0x19bfcc0>;
 		phandle = <0x0c>;
 	};
-
+	
 	pss_alt_ref_clk {
 		bootph-all;
 		compatible = "fixed-clock";
@@ -235,7 +240,7 @@
 		clock-frequency = <0x00>;
 		phandle = <0x0d>;
 	};
-
+	
 	gt_crx_ref_clk {
 		bootph-all;
 		compatible = "fixed-clock";
@@ -243,7 +248,7 @@
 		clock-frequency = <0x66ff300>;
 		phandle = <0x0f>;
 	};
-
+	
 	aux_ref_clk {
 		bootph-all;
 		compatible = "fixed-clock";
@@ -251,22 +256,22 @@
 		clock-frequency = <0x19bfcc0>;
 		phandle = <0x0e>;
 	};
-
-    aliases {
+	
+	aliases {
 		mmc0 = "/axi/mmc@ff170000";
 		serial0 = "/axi/serial@ff000000";
 	};
-
-    firmware {
-
+	
+	firmware {
+		
 		zynqmp-firmware {
 			compatible = "xlnx,zynqmp-firmware";
 			bootph-all;
 			method = "smc";
 			#power-domain-cells = <0x01>;
 			phandle = <0x12>;
-
-            zynqmp-power {
+			
+			zynqmp-power {
 				bootph-all;
 				compatible = "xlnx,zynqmp-power";
 				interrupt-parent = <0x05>;
@@ -275,62 +280,62 @@
 				mbox-names = "tx\0rx";
 				phandle = <0x42>;
 			};
-
+			
 			pcap {
 				compatible = "xlnx,zynqmp-pcap-fpga";
 				phandle = <0x10>;
 			};
-
-            pinctrl {
+			
+			pinctrl {
 				compatible = "xlnx,zynqmp-pinctrl";
 				status = "okay";
 				phandle = <0x56>;
-
+				
 				uart0-default {
 					phandle = <0x25>;
-
+					
 					mux {
 						groups = "uart0_4_grp";
 						function = "uart0";
 					};
-
+					
 					conf {
 						groups = "uart0_4_grp";
 						slew-rate = <0x01>;
 						power-source = <0x01>;
 					};
-
+					
 					conf-rx {
 						pins = "MIO18";
 						bias-high-impedance;
 					};
-
+					
 					conf-tx {
 						pins = "MIO19";
 						bias-disable;
 					};
 				};
-
+				
 				sdhci1-default {
 					phandle = <0x24>;
-
+					
 					mux {
 						groups = "sdio1_0_grp";
 						function = "sdio1";
 					};
-
+					
 					conf {
 						groups = "sdio1_0_grp";
 						slew-rate = <0x01>;
 						power-source = <0x01>;
 						bias-disable;
 					};
-
+					
 					mux-cd {
 						groups = "sdio1_cd_0_grp";
 						function = "sdio1_cd";
 					};
-
+					
 					conf-cd {
 						groups = "sdio1_cd_0_grp";
 						bias-high-impedance;
@@ -338,12 +343,12 @@
 						slew-rate = <0x01>;
 						power-source = <0x01>;
 					};
-
+					
 					mux-wp {
 						groups = "sdio1_wp_0_grp";
 						function = "sdio1_wp";
 					};
-
+					
 					conf-wp {
 						groups = "sdio1_wp_0_grp";
 						bias-high-impedance;
@@ -353,8 +358,8 @@
 					};
 				};
 			};
-
-
+			
+			
 			clock-controller {
 				bootph-all;
 				#clock-cells = <0x01>;
@@ -364,13 +369,5 @@
 				phandle = <0x04>;
 			};
 		};
-	};
-
-    chosen {
-		bootargs = "earlycon console=ttyPS0,115200 root=/dev/mmcblk0 rootwait rw";
-		// linux,initrd-start = <0x4000000>;
-		// linux,initrd-end = <0x4536393>;
-		// linux,initrd-end = <0x4800000>;
-		stdout-path = "serial0:115200n8";
 	};
 };
