@@ -1,14 +1,14 @@
-2025-05-10 09:01:56,252 - [DEBUG] Using xsct from : /home/wheatfox/petalinux_sdk/components/xsct/bin/xsct
-2025-05-10 09:01:56,252 - [INFO] Getting Platform info from HW file
-2025-05-10 09:01:56,252 - [DEBUG] Using the soc_family specified by user:zynqmp
-2025-05-10 09:01:56,281 - [DEBUG] Hardware Configuration:
-2025-05-10 09:01:56,281 - [DEBUG] MACHINE     = "None"
-2025-05-10 09:01:56,281 - [DEBUG] DEVICE_ID   = "xczu9eg"
-2025-05-10 09:01:56,281 - [DEBUG] SOC_FAMILY  = "zynqmp"
-2025-05-10 09:01:56,281 - [DEBUG] SOC_VARIANT = "eg"
-2025-05-10 09:01:56,297 - [INFO] Silentconfig project
-2025-05-10 09:01:56,297 - [DEBUG] Running CMD: yes "" | env KCONFIG_CONFIG=/home/wheatfox/Documents/Code/petalinux_projects/xilinx-zcu102-2024.1/project-spec/configs/config conf /home/wheatfox/Documents/Code/petalinux_projects/xilinx-zcu102-2024.1/project-spec/configs/configs/Kconfig
-2025-05-10 09:01:56,301 - [DEBUG] *
+2025-05-10 09:04:20,465 - [DEBUG] Using xsct from : /home/wheatfox/petalinux_sdk/components/xsct/bin/xsct
+2025-05-10 09:04:20,465 - [INFO] Getting Platform info from HW file
+2025-05-10 09:04:20,465 - [DEBUG] Using the soc_family specified by user:zynqmp
+2025-05-10 09:04:20,495 - [DEBUG] Hardware Configuration:
+2025-05-10 09:04:20,495 - [DEBUG] MACHINE     = "None"
+2025-05-10 09:04:20,495 - [DEBUG] DEVICE_ID   = "xczu9eg"
+2025-05-10 09:04:20,495 - [DEBUG] SOC_FAMILY  = "zynqmp"
+2025-05-10 09:04:20,495 - [DEBUG] SOC_VARIANT = "eg"
+2025-05-10 09:04:20,511 - [INFO] Silentconfig project
+2025-05-10 09:04:20,511 - [DEBUG] Running CMD: yes "" | env KCONFIG_CONFIG=/home/wheatfox/Documents/Code/petalinux_projects/xilinx-zcu102-2024.1/project-spec/configs/config conf /home/wheatfox/Documents/Code/petalinux_projects/xilinx-zcu102-2024.1/project-spec/configs/configs/Kconfig
+2025-05-10 09:04:20,516 - [DEBUG] *
 * PetaLinux System Configuration
 *
 ZYNQMP Configuration (SYSTEM_ZYNQMP) [Y/?] y
@@ -303,9 +303,9 @@ user layer 0 (USER_LAYER_0) []
 #
 # configuration written to /home/wheatfox/Documents/Code/petalinux_projects/xilinx-zcu102-2024.1/project-spec/configs/config
 #
-2025-05-10 09:01:56,342 - [INFO] Silentconfig rootfs
-2025-05-10 09:01:56,342 - [DEBUG] Running CMD: yes "" | env KCONFIG_CONFIG=/home/wheatfox/Documents/Code/petalinux_projects/xilinx-zcu102-2024.1/project-spec/configs/rootfs_config conf /home/wheatfox/Documents/Code/petalinux_projects/xilinx-zcu102-2024.1/project-spec/configs/rootfsconfigs/Kconfig
-2025-05-10 09:01:56,351 - [DEBUG] *
+2025-05-10 09:04:20,557 - [INFO] Silentconfig rootfs
+2025-05-10 09:04:20,557 - [DEBUG] Running CMD: yes "" | env KCONFIG_CONFIG=/home/wheatfox/Documents/Code/petalinux_projects/xilinx-zcu102-2024.1/project-spec/configs/rootfs_config conf /home/wheatfox/Documents/Code/petalinux_projects/xilinx-zcu102-2024.1/project-spec/configs/rootfsconfigs/Kconfig
+2025-05-10 09:04:20,565 - [DEBUG] *
 * Configuration
 *
 *
@@ -3859,4 +3859,4 @@ Add Users to Sudo users (ADD_USERS_TO_SUDOERS) [petalinux]
 #
 # configuration written to /home/wheatfox/Documents/Code/petalinux_projects/xilinx-zcu102-2024.1/project-spec/configs/rootfs_config
 #
-2025-05-10 09:01:56,353 - [INFO] Generating configuration files
+2025-05-10 09:04:20,567 - [INFO] Generating configuration files
