@@ -46,6 +46,7 @@ boot_qemu() {
     sudo cp -r ./images/linux/boot.scr /mnt
     sudo cp -r ./images/linux/BOOT.BIN /mnt
     sudo cp -r ./dts/zcu102-root-aarch64.dtb /mnt
+    sudo cp -r ./dts/system.dtb /mnt
     sudo umount /mnt
 
     echo "Starting QEMU..."
@@ -63,6 +64,7 @@ while [ "$1" != "" ]; do
             build_project
             ;;
         -B | --boot )
+            compile_dts
             boot_qemu
             ;;
         -h | --help )
@@ -85,4 +87,4 @@ done
 # images/linux/boot.scr
 # images/linux/BOOT.BIN
 
-# fatload mmc 0:0 0x40400000 Image;fatload mmc 0:0 0x40000000 zcu102-root-aarch64.dtb;booti 0x40400000 - 0x40000000
+# fatload mmc 0:0 0x40400000 Image;fatload mmc 0:0 0x40000000 system.dtb;booti 0x40400000 - 0x40000000
